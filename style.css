@@ -1,0 +1,209 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #fff8f0;
+    color: #333;
+}
+
+header {
+    background-color: #f4d35e;
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 10px 0 0;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #8e3b46;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Секції */
+section {
+    margin-bottom: 60px;
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    color: #8e3b46;
+    margin-bottom: 20px;
+}
+
+/* Про нас */
+.about {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.about-block {
+    max-width: 600px;
+}
+
+.about-text {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+/* Каталог */
+.catalog {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.catalog article {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    max-width: 250px;
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.catalog article img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.catalog-btn {
+    display: inline-block;
+    padding: 10px 15px;
+    margin-top: 10px;
+    background-color: #8e3b46;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.catalog-btn:hover {
+    background-color: #6c2d35;
+}
+
+.price {
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.order {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Відгуки */
+.rev-block {
+    border: 1px solid #eee;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fafafa;
+}
+
+.name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Контакти */
+.adress-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.adress-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.adress-text {
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+/* Футер */
+footer {
+    background-color: #f4d35e;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* 📱 Адаптив для телефонів */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .catalog {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .catalog article {
+        max-width: 90%;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .about-text, .adress-text {
+        font-size: 1rem;
+    }
+
+    .adress-title {
+        font-size: 1.1rem;
+    }
+}
